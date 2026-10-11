@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Trang Giới Thiệu Cá Nhân - Profile</title>
+</head>
+<body>
+
+    <!-- Phần đầu trang: Chứa ảnh đại diện, họ tên và thanh điều hướng -->
+    <header>
+        <h1>TRANG GIỚI THIỆU CÁ NHÂN</h1>
+        <img src="https://via.placeholder.com/150" alt="Ảnh đại diện của tôi" width="150" height="150">
+        <h2>Họ và tên: Nguyễn Văn A</h2>
+        <p>Sinh viên ngành: Công nghệ Thông tin</p>
+
+        <!-- Thanh điều hướng (menu nội bộ trong trang) -->
+        <nav>
+            <ul>
+                <li><a href="#gioi-thieu">Giới thiệu bản thân</a></li>
+                <li><a href="#thong-tin">Thông tin liên hệ & Kỹ năng</a></li>
+                <li><a href="#thoi-khoa-bieu">Thời khóa biểu</a></li>
+                <li><a href="#mang-xa-hoi">Mạng xã hội</a></li>
+                <li><a href="#form-lien-he">Liên hệ với tôi</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <!-- Phần thân chính của trang -->
+    <main>
+
+        <!-- Mục giới thiệu ngắn -->
+        <section id="gioi-thieu">
+            <h2>Giới thiệu bản thân</h2>
+            <article>
+                <h3>Đôi nét về tôi</h3>
+                <p>
+                    Xin chào! Tôi là <strong>Nguyễn Văn A</strong>, hiện đang là sinh viên năm 2 khoa Công nghệ Thông tin.
+                    Tôi có niềm đam mê lớn với lập trình web và công nghệ phần mềm. Mục tiêu của tôi là trở thành một
+                    Web Developer chuyên nghiệp trong tương lai.
+                </p>
+            </article>
+        </section>
+
+        <hr>
+
+        <!-- Mục thông tin liên hệ, sở thích và kỹ năng -->
+        <section id="thong-tin">
+            <h2>Thông tin liên hệ & Kỹ năng cá nhân</h2>
+            
+            <p><strong>Email:</strong> nguyenvana@example.com</p>
+            <p><strong>Số điện thoại:</strong> 0123 456 789</p>
+            <p><strong>Địa chỉ:</strong> TP. Hồ Chí Minh, Việt Nam</p>
+
+            <h3>Sở thích cá nhân:</h3>
+            <ul>
+                <li>Lập trình và nghiên cứu công nghệ mới</li>
+                <li>Đọc sách chuyên ngành và truyện tranh</li>
+                <li>Chơi thể thao: Cầu lông, bóng đá</li>
+                <li>Nghe nhạc và du lịch khám phá</li>
+            </ul>
+
+            <h3>Kỹ năng hiện tại:</h3>
+            <ul>
+                <li>Cấu trúc trang web với HTML5</li>
+                <li>Tư duy thuật toán và lập trình căn bản (C/C++, Python)</li>
+                <li>Kỹ năng tìm kiếm tài liệu và tự học</li>
+                <li>Kỹ năng làm việc nhóm và giao tiếp</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <!-- Mục bảng thời khóa biểu -->
+        <section id="thoi-khoa-bieu">
+            <h2>Thời khóa biểu trong tuần</h2>
+            <table border="1" cellpadding="8" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Thứ</th>
+                        <th>Môn học</th>
+                        <th>Thời gian</th>
+                        <th>Phòng học</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Thứ Hai</td>
+                        <td>Lập trình Web cơ bản</td>
+                        <td>07:30 - 11:00</td>
+                        <td>A1-201</td>
+                    </tr>
+                    <tr>
+                        <td>Thứ Tư</td>
+                        <td>Cơ sở dữ liệu</td>
+                        <td>13:00 - 16:30</td>
+                        <td>B2-302</td>
+                    </tr>
+                    <tr>
+                        <td>Thứ Sáu</td>
+                        <td>Mạng máy tính</td>
+                        <td>07:30 - 11:00</td>
+                        <td>C1-105</td>
+                    </tr>
+                    <tr>
+                        <td>Thứ Bảy</td>
+                        <td>Kỹ năng mềm</td>
+                        <td>08:00 - 10:30</td>
+                        <td>Hội trường B</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <hr>
+
+        <!-- Mục liên kết mạng xã hội -->
+        <section id="mang-xa-hoi">
+            <h2>Liên kết mạng xã hội</h2>
+            <p>Bạn có thể kết nối với tôi qua các kênh sau:</p>
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com" target="_blank">Trang Facebook cá nhân</a>
+                </li>
+                <li>
+                    <a href="https://github.com" target="_blank">Tài khoản GitHub</a>
+                </li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <!-- Mục form liên hệ đơn giản -->
+        <section id="form-lien-he">
+            <h2>Form liên hệ đơn giản</h2>
+            <form action="#" method="post">
+                <p>
+                    <label for="hoten">Họ và tên của bạn:</label><br>
+                    <input type="text" id="hoten" name="hoten" placeholder="Ví dụ: Trần Thị B" required>
+                </p>
+                <p>
+                    <label for="email">Địa chỉ Email:</label><br>
+                    <input type="email" id="email" name="email" placeholder="vidu@gmail.com" required>
+                </p>
+                <p>
+                    <label for="noidung">Nội dung tin nhắn:</label><br>
+                    <textarea id="noidung" name="noidung" rows="5" cols="45" placeholder="Nhập lời nhắn của bạn ở đây..." required></textarea>
+                </p>
+                <p>
+                    <button type="submit">Gửi thông tin</button>
+                    <button type="reset">Xóa làm lại</button>
+                </p>
+            </form>
+        </section>
+
+    </main>
+
+    <hr>
+
+    <!-- Chân trang -->
+    <footer>
+        <p>&copy; 2026 - Trang hồ sơ cá nhân tạo bởi Nguyễn Văn A. Được xây dựng hoàn toàn bằng HTML5 thuần.</p>
+    </footer>
+
+</body>
+</html>
