@@ -11,27 +11,31 @@
     <header class="topbar">
         <a class="back-link" href="../profile.html">← CV cá nhân</a>
         <div class="title"><span class="bubble"></span><span>BLUE</span> LAGOON</div>
-        <button class="sound-toggle" type="button" aria-pressed="false">Âm thanh: tắt</button>
+        <button class="feed-button" type="button">✦ Cho cá ăn</button>
     </header>
     <main>
         <section class="aquarium" aria-label="Hồ cá tương tác">
             <div class="water-surface"></div>
             <div class="light-ray ray-one"></div><div class="light-ray ray-two"></div>
             <div class="bubbles" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+            <div class="water-label"><span class="live-dot"></span> LIVE AQUARIUM <small>7 sinh vật đang bơi</small></div>
             <img class="fish school-fish" src="assets/goldFishSchool.png" alt="Đàn cá vàng">
+            <img class="fish school-fish school-fish-two" src="assets/goldFishSchool.png" alt="" aria-hidden="true">
             <img class="fish faint-fish" src="assets/faintSchool.png" alt="Đàn cá xanh">
+            <img class="fish faint-fish faint-fish-two" src="assets/faintSchool.png" alt="" aria-hidden="true">
             <img class="animal turtle" src="assets/turtle.png" alt="Rùa biển">
             <img class="animal shark" src="assets/shark.png" alt="Cá mập">
             <img class="diver diver-one" src="assets/diver1.png" alt="Thợ lặn màu xanh">
             <img class="diver diver-two" src="assets/diver2.png" alt="Thợ lặn màu hồng">
             <img class="diver diver-three" src="assets/diver3.png" alt="Thợ lặn màu xanh lá">
             <div class="sand"></div><div class="seaweed seaweed-left"></div><div class="seaweed seaweed-right"></div>
+            <div class="food-zone" aria-live="polite"></div>
             <div class="sign">WELCOME<br><small>to my aquarium</small></div>
         </section>
         <section class="info">
             <p class="eyebrow">A LITTLE OCEAN</p>
             <h1>Chạm vào đại dương<br><em>và khám phá.</em></h1>
-            <p class="description">Một góc hồ cá nhỏ được xây dựng bằng HTML5, CSS3 và JavaScript. Hãy bật chuyển động để xem những sinh vật dưới nước bơi lội.</p>
+            <p class="description">Một góc hồ cá nhỏ được xây dựng theo bài demo CSS3 của giảng viên. Các sinh vật bơi bằng <strong>@keyframes</strong>, có bong bóng, ánh sáng và tương tác cho cá ăn.</p>
             <button class="motion-button" type="button" aria-pressed="true">Tạm dừng chuyển động <span>Ⅱ</span></button>
         </section>
     </main>
