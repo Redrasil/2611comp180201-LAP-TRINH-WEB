@@ -2,166 +2,77 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>Trang Giới Thiệu Cá Nhân - Profile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CV cá nhân của sinh viên Công nghệ Thông tin">
+    <title>CV cá nhân | Redrasil</title>
+    <link rel="stylesheet" href="profile.css">
 </head>
 <body>
-
-    <!-- Phần đầu trang: Chứa ảnh đại diện, họ tên và thanh điều hướng -->
     <header>
-        <h1>TRANG GIỚI THIỆU CÁ NHÂN</h1>
-        <img src="https://via.placeholder.com/150" alt="Ảnh đại diện của tôi" width="150" height="150">
-        <h2>Họ và tên: Nguyễn Văn A</h2>
-        <p>Sinh viên ngành: Công nghệ Thông tin</p>
-
-        <!-- Thanh điều hướng (menu nội bộ trong trang) -->
-        <nav>
-            <ul>
-                <li><a href="#gioi-thieu">Giới thiệu bản thân</a></li>
-                <li><a href="#thong-tin">Thông tin liên hệ & Kỹ năng</a></li>
-                <li><a href="#thoi-khoa-bieu">Thời khóa biểu</a></li>
-                <li><a href="#mang-xa-hoi">Mạng xã hội</a></li>
-                <li><a href="#form-lien-he">Liên hệ với tôi</a></li>
-            </ul>
+        <nav class="nav container" aria-label="Điều hướng chính">
+            <a class="brand" href="#trang-chu">R<span>.</span></a>
+            <div class="nav-links">
+                <a href="#gioi-thieu">Giới thiệu</a>
+                <a href="#ky-nang">Kỹ năng</a>
+                <a href="#hoc-van">Học vấn</a>
+                <a href="#lien-he">Liên hệ</a>
+                <a class="nav-aquarium" href="aquarium/index.html">Bài hồ cá</a>
+            </div>
         </nav>
     </header>
 
-    <hr>
-
-    <!-- Phần thân chính của trang -->
-    <main>
-
-        <!-- Mục giới thiệu ngắn -->
-        <section id="gioi-thieu">
-            <h2>Giới thiệu bản thân</h2>
-            <article>
-                <h3>Đôi nét về tôi</h3>
-                <p>
-                    Xin chào! Tôi là <strong>Nguyễn Văn A</strong>, hiện đang là sinh viên năm 2 khoa Công nghệ Thông tin.
-                    Tôi có niềm đam mê lớn với lập trình web và công nghệ phần mềm. Mục tiêu của tôi là trở thành một
-                    Web Developer chuyên nghiệp trong tương lai.
-                </p>
-            </article>
+    <main id="trang-chu">
+        <section class="hero container">
+            <div class="hero-copy">
+                <p class="eyebrow">XIN CHÀO, MÌNH LÀ</p>
+                <h1>Redrasil<span>.</span></h1>
+                <p class="lead">Sinh viên Công nghệ Thông tin yêu thích thiết kế giao diện web đẹp, dễ dùng và có tính tương tác.</p>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="#lien-he">Liên hệ với mình</a>
+                    <a class="button button-quiet" href="aquarium/index.html">Xem bài hồ cá <span aria-hidden="true">→</span></a>
+                </div>
+            </div>
+            <div class="avatar" aria-label="Ảnh đại diện chữ R">R</div>
         </section>
 
-        <hr>
-
-        <!-- Mục thông tin liên hệ, sở thích và kỹ năng -->
-        <section id="thong-tin">
-            <h2>Thông tin liên hệ & Kỹ năng cá nhân</h2>
-            
-            <p><strong>Email:</strong> nguyenvana@example.com</p>
-            <p><strong>Số điện thoại:</strong> 0123 456 789</p>
-            <p><strong>Địa chỉ:</strong> TP. Hồ Chí Minh, Việt Nam</p>
-
-            <h3>Sở thích cá nhân:</h3>
-            <ul>
-                <li>Lập trình và nghiên cứu công nghệ mới</li>
-                <li>Đọc sách chuyên ngành và truyện tranh</li>
-                <li>Chơi thể thao: Cầu lông, bóng đá</li>
-                <li>Nghe nhạc và du lịch khám phá</li>
-            </ul>
-
-            <h3>Kỹ năng hiện tại:</h3>
-            <ul>
-                <li>Cấu trúc trang web với HTML5</li>
-                <li>Tư duy thuật toán và lập trình căn bản (C/C++, Python)</li>
-                <li>Kỹ năng tìm kiếm tài liệu và tự học</li>
-                <li>Kỹ năng làm việc nhóm và giao tiếp</li>
-            </ul>
+        <section class="section container" id="gioi-thieu">
+            <div class="section-heading"><p class="eyebrow">01 / GIỚI THIỆU</p><h2>Một chút về mình</h2></div>
+            <div class="two-columns">
+                <p>Mình đang học ngành Công nghệ Thông tin và từng bước xây dựng nền tảng về lập trình web. Mình thích biến những ý tưởng đơn giản thành các trang web trực quan, responsive và thân thiện với người dùng.</p>
+                <p>Mục tiêu hiện tại của mình là nâng cao HTML, CSS, JavaScript và rèn luyện khả năng làm việc nhóm qua các dự án thực tế.</p>
+            </div>
         </section>
 
-        <hr>
-
-        <!-- Mục bảng thời khóa biểu -->
-        <section id="thoi-khoa-bieu">
-            <h2>Thời khóa biểu trong tuần</h2>
-            <table border="1" cellpadding="8" cellspacing="0">
-                <thead>
-                    <tr>
-                        <th>Thứ</th>
-                        <th>Môn học</th>
-                        <th>Thời gian</th>
-                        <th>Phòng học</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Thứ Hai</td>
-                        <td>Lập trình Web cơ bản</td>
-                        <td>07:30 - 11:00</td>
-                        <td>A1-201</td>
-                    </tr>
-                    <tr>
-                        <td>Thứ Tư</td>
-                        <td>Cơ sở dữ liệu</td>
-                        <td>13:00 - 16:30</td>
-                        <td>B2-302</td>
-                    </tr>
-                    <tr>
-                        <td>Thứ Sáu</td>
-                        <td>Mạng máy tính</td>
-                        <td>07:30 - 11:00</td>
-                        <td>C1-105</td>
-                    </tr>
-                    <tr>
-                        <td>Thứ Bảy</td>
-                        <td>Kỹ năng mềm</td>
-                        <td>08:00 - 10:30</td>
-                        <td>Hội trường B</td>
-                    </tr>
-                </tbody>
-            </table>
+        <section class="section section-muted" id="ky-nang">
+            <div class="container"><div class="section-heading"><p class="eyebrow">02 / NĂNG LỰC</p><h2>Kỹ năng & sở thích</h2></div>
+                <div class="cards">
+                    <article class="card"><span class="card-number">01</span><h3>Phát triển web</h3><p>HTML5, CSS3, JavaScript cơ bản và thiết kế giao diện responsive.</p></article>
+                    <article class="card"><span class="card-number">02</span><h3>Làm việc nhóm</h3><p>Chủ động trao đổi, tìm tài liệu và hoàn thành công việc đúng tiến độ.</p></article>
+                    <article class="card"><span class="card-number">03</span><h3>Sở thích</h3><p>Nghe nhạc, khám phá công nghệ mới, đọc sách và chụp ảnh.</p></article>
+                </div>
+            </div>
         </section>
 
-        <hr>
-
-        <!-- Mục liên kết mạng xã hội -->
-        <section id="mang-xa-hoi">
-            <h2>Liên kết mạng xã hội</h2>
-            <p>Bạn có thể kết nối với tôi qua các kênh sau:</p>
-            <ul>
-                <li>
-                    <a href="https://www.facebook.com" target="_blank">Trang Facebook cá nhân</a>
-                </li>
-                <li>
-                    <a href="https://github.com" target="_blank">Tài khoản GitHub</a>
-                </li>
-            </ul>
+        <section class="section container" id="hoc-van">
+            <div class="section-heading"><p class="eyebrow">03 / HỌC VẤN</p><h2>Hành trình học tập</h2></div>
+            <div class="timeline">
+                <article><span>2024 — nay</span><div><h3>Công nghệ Thông tin</h3><p>Sinh viên đại học · Tập trung vào lập trình và thiết kế web</p></div></article>
+                <article><span>2025</span><div><h3>Dự án học tập</h3><p>Xây dựng trang profile cá nhân và mô phỏng hồ cá bằng HTML, CSS, JavaScript.</p></div></article>
+            </div>
         </section>
 
-        <hr>
-
-        <!-- Mục form liên hệ đơn giản -->
-        <section id="form-lien-he">
-            <h2>Form liên hệ đơn giản</h2>
-            <form action="#" method="post">
-                <p>
-                    <label for="hoten">Họ và tên của bạn:</label><br>
-                    <input type="text" id="hoten" name="hoten" placeholder="Ví dụ: Trần Thị B" required>
-                </p>
-                <p>
-                    <label for="email">Địa chỉ Email:</label><br>
-                    <input type="email" id="email" name="email" placeholder="vidu@gmail.com" required>
-                </p>
-                <p>
-                    <label for="noidung">Nội dung tin nhắn:</label><br>
-                    <textarea id="noidung" name="noidung" rows="5" cols="45" placeholder="Nhập lời nhắn của bạn ở đây..." required></textarea>
-                </p>
-                <p>
-                    <button type="submit">Gửi thông tin</button>
-                    <button type="reset">Xóa làm lại</button>
-                </p>
-            </form>
+        <section class="section contact-section" id="lien-he">
+            <div class="container contact-grid">
+                <div><p class="eyebrow">04 / LIÊN HỆ</p><h2>Cùng tạo điều gì đó thú vị nhé.</h2><p class="contact-note">Bạn có thể gửi lời nhắn cho mình qua biểu mẫu bên cạnh.</p></div>
+                <form class="contact-form" action="#" method="post">
+                    <label for="hoten">Họ và tên<input type="text" id="hoten" name="hoten" placeholder="Nguyễn Văn A" required></label>
+                    <label for="email">Email<input type="email" id="email" name="email" placeholder="ban@example.com" required></label>
+                    <label for="noidung">Lời nhắn<textarea id="noidung" name="noidung" rows="4" placeholder="Xin chào..." required></textarea></label>
+                    <button class="button button-primary" type="submit">Gửi lời nhắn <span aria-hidden="true">→</span></button>
+                </form>
+            </div>
         </section>
-
     </main>
-
-    <hr>
-
-    <!-- Chân trang -->
-    <footer>
-        <p>&copy; 2026 - Trang hồ sơ cá nhân tạo bởi Nguyễn Văn A. Được xây dựng hoàn toàn bằng HTML5 thuần.</p>
-    </footer>
-
+    <footer class="footer container"><span>© 2026 Redrasil</span><span>Thiết kế bằng HTML5 & CSS3</span></footer>
 </body>
 </html>
