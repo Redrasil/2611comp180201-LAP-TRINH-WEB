@@ -20,3 +20,17 @@ feedButton.addEventListener('click', () => {
         window.setTimeout(() => food.remove(), 3800);
     }
 });
+
+aquarium.addEventListener('click', (event) => {
+    if (event.target.closest('button')) {
+        return;
+    }
+
+    const aquariumBox = aquarium.getBoundingClientRect();
+    const ripple = document.createElement('span');
+    ripple.className = 'water-ripple';
+    ripple.style.left = `${event.clientX - aquariumBox.left - 12}px`;
+    ripple.style.top = `${event.clientY - aquariumBox.top - 12}px`;
+    aquarium.appendChild(ripple);
+    window.setTimeout(() => ripple.remove(), 1500);
+});
