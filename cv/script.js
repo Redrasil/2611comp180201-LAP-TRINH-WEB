@@ -46,15 +46,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     window.addEventListener('scroll', highlightNav);
 
-    // Print CV button
-    const printBtn = document.getElementById('btn-print-cv');
-    if (printBtn) {
-        printBtn.addEventListener('click', (e) => {
-            e.preventDefault();
-            window.print();
-        });
-    }
-
     // Contact form submission handling
     const contactForm = document.getElementById('contact-form');
     const toast = document.getElementById('toast');
