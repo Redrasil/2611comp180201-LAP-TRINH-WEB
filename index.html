@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2611COMP180201 - Lập trình Web | Hoàng Dương Phúc Quang</title>
+    <link rel="stylesheet" href="cv/style.css">
+    <style>
+        .portal-wrapper {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background: linear-gradient(180deg, #f8faf9 0%, #edf4f2 100%);
+        }
+        .portal-hero {
+            padding: 80px 0 60px;
+            text-align: center;
+        }
+        .portal-kicker {
+            display: inline-block;
+            font-size: 0.8rem;
+            letter-spacing: 0.15em;
+            font-weight: 700;
+            color: var(--coral);
+            background: rgba(238, 108, 77, 0.1);
+            padding: 6px 16px;
+            border-radius: 100px;
+            margin-bottom: 20px;
+        }
+        .portal-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 32px;
+            margin-top: 40px;
+        }
+        .portal-card {
+            background: #ffffff;
+            border-radius: 16px;
+            padding: 36px;
+            border: 1px solid var(--line);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: all 0.3s ease;
+        }
+        .portal-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+            border-color: var(--ink);
+        }
+        .portal-card.card-aquarium {
+            background: linear-gradient(145deg, #07516f, #17384a);
+            color: #ffffff;
+            border: none;
+        }
+        .portal-card.card-aquarium:hover {
+            box-shadow: 0 20px 45px rgba(7, 81, 111, 0.4);
+        }
+        .portal-card.card-aquarium h3,
+        .portal-card.card-aquarium p {
+            color: #ffffff;
+        }
+        .portal-card.card-aquarium .muted-text {
+            color: #c4e5ec;
+        }
+        .portal-card-header {
+            margin-bottom: 20px;
+        }
+        .portal-card-num {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            color: var(--coral);
+            margin-bottom: 8px;
+            display: block;
+        }
+        .portal-card.card-aquarium .portal-card-num {
+            color: var(--accent);
+        }
+        .portal-card h3 {
+            font-size: 1.6rem;
+            margin-bottom: 12px;
+        }
+        .muted-text {
+            color: var(--muted);
+            font-size: 0.98rem;
+            line-height: 1.6;
+        }
+        .portal-btn {
+            margin-top: 28px;
+            align-self: flex-start;
+        }
+    </style>
+</head>
+<body>
+    <div class="portal-wrapper">
+        <header class="site-header">
+            <div class="nav container">
+                <a class="brand" href="index.html">2611COMP180201<span>.</span></a>
+                <span style="font-size: 0.88rem; font-weight: 600; color: var(--muted);">Lập Trình Web</span>
+            </div>
+        </header>
+
+        <main class="portal-hero container">
+            <span class="portal-kicker">HỌC PHẦN 2611COMP180201 — BÀI TẬP THỰC HÀNH</span>
+            <h1>Hoàng Dương Phúc Quang<span>.</span></h1>
+            <p class="muted-text" style="font-size: 1.15rem; max-width: 650px; margin: 16px auto 0;">
+                Sinh viên: <b>Hoàng Dương Phúc Quang</b> (@Redrasil) &bull; MSSV: <b>49.01.101.075</b><br>
+                Khoa Công nghệ Thông tin — Trường Đại học Sư phạm TP.HCM
+            </p>
+
+            <div class="portal-grid">
+                <!-- Bài 1: CV -->
+                <div class="portal-card">
+                    <div class="portal-card-header">
+                        <span class="portal-card-num">BÀI TẬP 01 / THƯ MỤC: cv/</span>
+                        <h3>Hồ Sơ Năng Lực & CV Trực Tuyến</h3>
+                        <p class="muted-text">
+                            Trang CV cá nhân responsive giới thiệu học vấn, kỹ năng, các dự án tiêu biểu, thời khóa biểu và tích hợp chức năng in / xuất file PDF chuẩn xác.
+                        </p>
+                    </div>
+                    <a class="button button-primary portal-btn" href="cv/index.html">Mở bài CV (cv/) ↗</a>
+                </div>
+
+                <!-- Bài 2: Aquarium -->
+                <div class="portal-card card-aquarium">
+                    <div class="portal-card-header">
+                        <span class="portal-card-num">BÀI TẬP 02 / THƯ MỤC: aquarium/</span>
+                        <h3>Blue Lagoon — Hồ Cá Thủy Cung</h3>
+                        <p class="muted-text">
+                            Mô phỏng hồ cá dưới đại dương bằng CSS3 Animation & JavaScript tương tác. Cho phép tương tác cho cá ăn, điều chỉnh tốc độ bơi và tạo bong bóng nước.
+                        </p>
+                    </div>
+                    <a class="button button-accent portal-btn" href="aquarium/index.html">Mở bài Hồ cá (aquarium/) ↗</a>
+                </div>
+            </div>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container footer-content">
+                <span>© 2026 HOÀNG DƯƠNG PHÚC QUANG (49.01.101.075)</span>
+                <span>2611COMP180201-LAP-TRINH-WEB</span>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
