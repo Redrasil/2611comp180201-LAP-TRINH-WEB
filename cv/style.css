@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Space+Grotesk:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;600&display=swap');
 
 :root {
     --ink: #17212b;
@@ -37,6 +37,10 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+code, .code-font {
+    font-family: 'JetBrains Mono', Consolas, Monaco, monospace;
+}
+
 h1, h2, h3, h4 {
     font-family: 'Space Grotesk', sans-serif;
     color: var(--ink);
@@ -44,7 +48,7 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-    font-size: clamp(3rem, 6.5vw, 6rem);
+    font-size: clamp(2.8rem, 5.8vw, 5.5rem);
     letter-spacing: -0.05em;
     font-weight: 700;
 }
@@ -83,11 +87,11 @@ p:last-child {
 .site-header {
     position: sticky;
     top: 0;
-    background: rgba(248, 250, 249, 0.92);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+    background: rgba(248, 250, 249, 0.94);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
     z-index: 100;
-    border-bottom: 1px solid rgba(220, 228, 232, 0.6);
+    border-bottom: 1px solid rgba(220, 228, 232, 0.7);
 }
 
 .nav {
@@ -99,7 +103,7 @@ p:last-child {
 
 .brand {
     font-family: 'Space Grotesk', sans-serif;
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     font-weight: 700;
     letter-spacing: -0.04em;
     display: flex;
@@ -122,7 +126,7 @@ p:last-child {
 .nav-links {
     display: flex;
     align-items: center;
-    gap: 22px;
+    gap: 20px;
 }
 
 .nav-links a {
@@ -165,14 +169,14 @@ p:last-child {
 .hero {
     min-height: calc(100vh - 80px);
     display: grid;
-    grid-template-columns: 1.25fr 0.75fr;
+    grid-template-columns: 1.3fr 0.7fr;
     align-items: center;
     gap: 40px;
     padding: 60px 0 90px;
 }
 
 .hero-copy {
-    max-width: 650px;
+    max-width: 680px;
 }
 
 .kicker {
@@ -180,14 +184,14 @@ p:last-child {
     align-items: center;
     gap: 10px;
     font-size: 0.75rem;
-    letter-spacing: 0.14em;
+    letter-spacing: 0.12em;
     font-weight: 700;
     color: var(--coral);
     text-transform: uppercase;
     background: rgba(238, 108, 77, 0.08);
     padding: 6px 14px;
     border-radius: 100px;
-    margin-bottom: 24px;
+    margin-bottom: 22px;
 }
 
 .status-dot {
@@ -206,30 +210,46 @@ p:last-child {
 }
 
 .hero h1 {
-    margin-bottom: 8px;
+    margin-bottom: 6px;
 }
 
 .hero-name-en {
-    font-size: clamp(1.4rem, 2.5vw, 2.2rem);
+    font-size: clamp(1.2rem, 2.2vw, 1.8rem);
     color: var(--coral);
     font-weight: 600;
     font-family: 'Space Grotesk', sans-serif;
+    margin-bottom: 16px;
+}
+
+.hero-role-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
     margin-bottom: 20px;
 }
 
-.hero-role {
-    display: inline-block;
-    font-size: 1.1rem;
-    font-weight: 700;
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 14px;
+    border-radius: 100px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    background: #ffffff;
+    border: 1px solid var(--line);
     color: var(--ink);
-    border-bottom: 2px solid var(--accent);
-    padding-bottom: 2px;
-    margin-bottom: 20px;
+}
+
+.hero-badge.highlight {
+    background: var(--ink);
+    color: var(--accent);
+    border-color: var(--ink);
 }
 
 .hero-intro {
     color: var(--muted);
-    font-size: 1.12rem;
+    font-size: 1.1rem;
     margin-bottom: 32px;
     line-height: 1.7;
 }
@@ -351,10 +371,10 @@ p:last-child {
 
 .aside-note {
     color: var(--muted);
-    font-size: 0.9rem;
+    font-size: 0.88rem;
     font-style: italic;
-    margin-top: 16px;
-    max-width: 270px;
+    margin-top: 14px;
+    max-width: 280px;
     line-height: 1.5;
 }
 
@@ -388,7 +408,7 @@ p:last-child {
     display: block;
     color: var(--accent);
     font-family: 'Space Grotesk', sans-serif;
-    font-size: 2.2rem;
+    font-size: 2.1rem;
     font-weight: 700;
     line-height: 1;
     margin-bottom: 6px;
@@ -441,7 +461,7 @@ p:last-child {
 }
 
 .section-title-row p {
-    max-width: 380px;
+    max-width: 440px;
     color: var(--muted);
     font-size: 0.95rem;
 }
@@ -464,7 +484,7 @@ p:last-child {
 .about-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 80px;
+    gap: 70px;
     align-items: start;
 }
 
@@ -499,7 +519,7 @@ p:last-child {
 }
 
 .info-card h4 {
-    font-size: 0.85rem;
+    font-size: 0.82rem;
     color: var(--coral);
     text-transform: uppercase;
     letter-spacing: 0.05em;
@@ -507,10 +527,11 @@ p:last-child {
 }
 
 .info-card p {
-    font-size: 0.95rem;
+    font-size: 0.92rem;
     color: var(--ink);
     font-weight: 500;
     margin: 0;
+    line-height: 1.5;
 }
 
 .interest-list {
@@ -556,7 +577,7 @@ p:last-child {
 .toolkit-grid {
     display: grid;
     grid-template-columns: 0.85fr 1.15fr;
-    gap: 80px;
+    gap: 70px;
 }
 
 .toolkit-header h2 {
@@ -572,7 +593,7 @@ p:last-child {
 .skill-groups {
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: 28px;
 }
 
 .skill-group {
@@ -655,6 +676,46 @@ p:last-child {
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+/* ================= RESEARCH HIGHLIGHT BOX ================= */
+.research-highlight {
+    background: linear-gradient(135deg, #17212b 0%, #0d1a26 100%);
+    color: #ffffff;
+    border-radius: var(--radius);
+    padding: 36px;
+    margin-bottom: 32px;
+    border: 1px solid rgba(217, 243, 106, 0.25);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.research-highlight h3 {
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+}
+
+.research-highlight p {
+    color: #cbd5e1;
+    font-size: 0.98rem;
+    line-height: 1.7;
+}
+
+.research-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 18px;
+}
+
+.research-pill {
+    background: rgba(217, 243, 106, 0.15);
+    color: var(--accent);
+    border: 1px solid rgba(217, 243, 106, 0.3);
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 4px 14px;
+    border-radius: 100px;
+}
+
 /* ================= PROJECTS ================= */
 .project-grid {
     display: grid;
@@ -705,7 +766,7 @@ p:last-child {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
 }
 
 .project-index {
@@ -735,13 +796,13 @@ p:last-child {
 }
 
 .project-body h3 {
-    font-size: 1.5rem;
+    font-size: 1.45rem;
     margin-bottom: 12px;
 }
 
 .project-desc {
     color: var(--muted);
-    font-size: 0.95rem;
+    font-size: 0.94rem;
     line-height: 1.6;
     margin-bottom: 20px;
 }
@@ -750,7 +811,7 @@ p:last-child {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
-    margin-bottom: 24px;
+    margin-bottom: 22px;
 }
 
 .project-tag {
@@ -773,6 +834,7 @@ p:last-child {
     justify-content: space-between;
     padding-top: 18px;
     border-top: 1px solid var(--line);
+    font-size: 0.88rem;
 }
 
 .project-featured .project-footer {
@@ -800,7 +862,7 @@ p:last-child {
 .journey-grid {
     display: grid;
     grid-template-columns: 0.8fr 1.2fr;
-    gap: 80px;
+    gap: 70px;
 }
 
 .timeline {
@@ -927,6 +989,11 @@ tr:last-child td {
     color: #7e22ce;
 }
 
+.badge-amber {
+    background: #fef3c7;
+    color: #b45309;
+}
+
 /* ================= CONTACT SECTION ================= */
 .contact-section {
     background: var(--ink);
@@ -937,7 +1004,7 @@ tr:last-child td {
 .contact-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 80px;
+    gap: 70px;
 }
 
 .contact-info h2 {
@@ -1153,6 +1220,17 @@ tr:last-child td {
         background: #334155 !important;
     }
 
+    .research-highlight {
+        background: #f8fafc !important;
+        color: #000000 !important;
+        border: 1px solid #94a3b8 !important;
+    }
+
+    .research-highlight h3,
+    .research-highlight p {
+        color: #000000 !important;
+    }
+
     .contact-section {
         background: #ffffff !important;
         color: #000000 !important;
@@ -1189,6 +1267,10 @@ tr:last-child td {
 
     .hero-copy {
         max-width: 100%;
+    }
+
+    .hero-role-badges {
+        justify-content: center;
     }
 
     .hero-intro {
