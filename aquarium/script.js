@@ -3,14 +3,17 @@ const motionButton = document.querySelector('.motion-button');
 const feedButton = document.querySelector('.feed-button');
 const foodZone = document.querySelector('.food-zone');
 const speedButtons = document.querySelectorAll('[data-speed]');
+const aquariumStatus = document.querySelector('#aquarium-status');
 
 motionButton.addEventListener('click', () => {
     const paused = aquarium.classList.toggle('paused');
     motionButton.setAttribute('aria-pressed', String(!paused));
     motionButton.innerHTML = paused ? 'Bật chuyển động <span>▶</span>' : 'Tạm dừng chuyển động <span>Ⅱ</span>';
+    aquariumStatus.textContent = paused ? 'Chuyển động đã tạm dừng' : '9 sinh vật đang bơi';
 });
 
 feedButton.addEventListener('click', () => {
+    aquariumStatus.textContent = 'Đang cho cá ăn...';
     for (let index = 0; index < 12; index += 1) {
         const food = document.createElement('i');
         food.className = 'food';
@@ -20,6 +23,11 @@ feedButton.addEventListener('click', () => {
         foodZone.appendChild(food);
         window.setTimeout(() => food.remove(), 3800);
     }
+    window.setTimeout(() => {
+        if (!aquarium.classList.contains('paused')) {
+            aquariumStatus.textContent = '9 sinh vật đang bơi';
+        }
+    }, 3800);
 });
 
 aquarium.addEventListener('click', (event) => {
@@ -44,5 +52,7 @@ speedButtons.forEach((button) => {
         if (button.dataset.speed !== 'normal') {
             aquarium.classList.add(`speed-${button.dataset.speed}`);
         }
+        const speedName = button.dataset.speed === 'slow' ? 'Tốc độ chậm' : button.dataset.speed === 'fast' ? 'Tốc độ nhanh' : 'Tốc độ bình thường';
+        aquariumStatus.textContent = speedName;
     });
 });

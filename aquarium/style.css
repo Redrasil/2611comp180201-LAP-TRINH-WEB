@@ -10,3 +10,4 @@
 .aquarium-dashboard{width:100%;max-width:520px}
 .aquarium{cursor:crosshair}
 @media(max-width:750px){.info{display:block!important}.info-panel{margin-top:24px}.aquarium-dashboard{max-width:none}.species{justify-content:flex-start}.controls{display:flex}}
+.title{white-space:nowrap}.topbar{min-width:0}.feed-button{white-space:nowrap}.speed-controls button:focus-visible,.motion-button:focus-visible,.feed-button:focus-visible,.back-link:focus-visible{outline:3px solid #d9f36a;outline-offset:3px}@media(max-width:750px){.topbar{height:72px}.title{font-size:.72rem}.back-link{font-size:.72rem}.feed-button{font-size:.72rem;padding:7px 10px}.aquarium{min-height:500px}.water-label{top:18px;right:18px}.water-label small{max-width:130px;text-align:right}.species span{font-size:.68rem}.speed-controls button{min-height:34px}.motion-button{min-height:34px}}@media(prefers-reduced-motion:reduce){.aquarium *{animation-duration:.001ms!important;animation-iteration-count:1!important}}
