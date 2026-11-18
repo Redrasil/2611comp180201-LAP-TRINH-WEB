@@ -2,6 +2,7 @@ const aquarium = document.querySelector('.aquarium');
 const motionButton = document.querySelector('.motion-button');
 const feedButton = document.querySelector('.feed-button');
 const foodZone = document.querySelector('.food-zone');
+const speedButtons = document.querySelectorAll('[data-speed]');
 
 motionButton.addEventListener('click', () => {
     const paused = aquarium.classList.toggle('paused');
@@ -33,4 +34,15 @@ aquarium.addEventListener('click', (event) => {
     ripple.style.top = `${event.clientY - aquariumBox.top - 12}px`;
     aquarium.appendChild(ripple);
     window.setTimeout(() => ripple.remove(), 1500);
+});
+
+speedButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+        speedButtons.forEach((speedButton) => speedButton.classList.remove('active'));
+        button.classList.add('active');
+        aquarium.classList.remove('speed-slow', 'speed-fast');
+        if (button.dataset.speed !== 'normal') {
+            aquarium.classList.add(`speed-${button.dataset.speed}`);
+        }
+    });
 });
