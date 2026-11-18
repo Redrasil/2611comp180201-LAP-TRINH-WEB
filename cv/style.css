@@ -326,6 +326,7 @@ p:last-child {
     position: relative;
     width: 280px;
     height: 280px;
+    margin-bottom: 25px;
 }
 
 .avatar-frame {
@@ -353,29 +354,15 @@ p:last-child {
     object-position: center 30%;
 }
 
-.student-badge {
-    margin-top: 36px;
-    background: #ffffff;
-    padding: 12px 22px;
-    border-radius: 100px;
-    border: 1px solid var(--line);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
-    font-size: 0.85rem;
-    font-weight: 600;
-    color: var(--ink);
-}
-
-.student-badge span {
-    color: var(--coral);
-}
-
 .aside-note {
     color: var(--muted);
-    font-size: 0.88rem;
+    font-size: 0.9rem;
     font-style: italic;
-    margin-top: 14px;
+    margin-top: 35px;
     max-width: 280px;
     line-height: 1.5;
+    position: relative;
+    z-index: 5;
 }
 
 /* ================= STATS BAR ================= */

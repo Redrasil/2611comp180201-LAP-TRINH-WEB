@@ -3,7 +3,7 @@
 Repository lưu trữ các bài tập thực hành môn **Lập trình Web** (Mã học phần: `2611COMP180201`).
 
 - **Sinh viên thực hiện:** Hoàng Dương Phúc Quang (Redrasil)
-- **Chương trình đào tạo:** Song ngành Sư phạm Toán học & Công nghệ Thông tin
+- **Chương trình đào tạo:** Sư phạm Toán học (Song ngữ)
 - **Khoa / Trường:** Khoa Toán - Tin học, Trường Đại học Sư phạm TP.HCM (HCMUE)
 - **Định hướng phát triển:** An ninh mạng (Cybersecurity), Red Team & Trí tuệ nhân tạo (AI)
 
