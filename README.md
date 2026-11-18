@@ -6,7 +6,7 @@ Repository lưu trữ các bài tập thực hành môn **Lập trình Web** (M�
 - **Mã số sinh viên:** 49.01.101.075
 - **Lớp:** 49.01.TOAN.SN (Chương trình Song ngành: Sư phạm Toán học & Công nghệ Thông tin)
 - **Khoa / Trường:** Khoa Toán - Tin học, Trường Đại học Sư phạm TP.HCM (HCMUE)
-- **Lĩnh vực nghiên cứu:** Sửa lỗi lượng tử (Quantum Error Correction - QEC), Mã Stabilizer & CSS
+- **Định hướng phát triển:** An ninh mạng (Cybersecurity), Red Team & Trí tuệ nhân tạo (AI)
 
 ---
 
@@ -18,8 +18,8 @@ Repository lưu trữ các bài tập thực hành môn **Lập trình Web** (M�
 ├── index.html            # Trang tổng quan & điều hướng vào các bài thực hành
 ├── profile.html          # Điều hướng tương thích ngược về cv/index.html
 │
-├── cv/                   # BÀI TẬP 1: Hồ sơ học thuật & CV trực tuyến
-│   ├── index.html        # Trang CV học thuật hoàn thiện đầy đủ
+├── cv/                   # BÀI TẬP 1: Hồ sơ cá nhân & CV trực tuyến
+│   ├── index.html        # Trang CV cá nhân hoàn thiện đầy đủ
 │   ├── style.css         # Bảng định kiểu CSS, hỗ trợ responsive & print PDF
 │   ├── script.js         # Xử lý menu mobile, active link, form, in ấn
 │   ├── avatar.jpg        # Ảnh đại diện
@@ -37,5 +37,5 @@ Repository lưu trữ các bài tập thực hành môn **Lập trình Web** (M�
 ## 🚀 Hướng dẫn mở bài tập
 
 1. **Trang chủ tổng hợp:** Mở file `index.html` ở thư mục gốc trên trình duyệt web.
-2. **Bài tập CV cá nhân & học thuật:** Mở file `cv/index.html`.
+2. **Bài tập CV cá nhân:** Mở file `cv/index.html`.
 3. **Bài tập Hồ cá tương tác:** Mở file `aquarium/index.html`.
