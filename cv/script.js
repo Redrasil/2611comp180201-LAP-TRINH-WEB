@@ -46,32 +46,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
     window.addEventListener('scroll', highlightNav);
 
-    // Contact form submission handling
-    const contactForm = document.getElementById('contact-form');
-    const toast = document.getElementById('toast');
-
-    if (contactForm && toast) {
-        contactForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-
-            const name = document.getElementById('hoten').value.trim();
-            const email = document.getElementById('email').value.trim();
-            const message = document.getElementById('noidung').value.trim();
-
-            if (!name || !email || !message) {
-                alert('Vui lòng điền đầy đủ các thông tin bắt buộc.');
-                return;
-            }
-
-            // Show toast notification
-            toast.textContent = `Cảm ơn ${name}! Tin nhắn của bạn đã được gửi thành công.`;
-            toast.classList.add('show');
-
-            contactForm.reset();
-
-            setTimeout(() => {
-                toast.classList.remove('show');
-            }, 4500);
-        });
-    }
 });

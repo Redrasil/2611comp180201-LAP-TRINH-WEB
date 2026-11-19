@@ -989,9 +989,11 @@ tr:last-child td {
 }
 
 .contact-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 70px;
+    display: block;
+}
+
+.contact-info {
+    max-width: 760px;
 }
 
 .contact-info h2 {
@@ -1051,80 +1053,6 @@ tr:last-child td {
     color: var(--accent);
 }
 
-.contact-form {
-    display: grid;
-    gap: 20px;
-    background: var(--dark-surface);
-    padding: 36px;
-    border-radius: var(--radius);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-}
-
-.form-group {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-.form-group label {
-    font-size: 0.85rem;
-    color: #cbd5e1;
-    font-weight: 500;
-}
-
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 14px 16px;
-    background: rgba(255, 255, 255, 0.04);
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    border-radius: 8px;
-    color: #ffffff;
-    font-family: inherit;
-    font-size: 0.95rem;
-    transition: var(--transition);
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-    outline: none;
-    border-color: var(--accent);
-    background: rgba(255, 255, 255, 0.08);
-    box-shadow: 0 0 0 3px rgba(217, 243, 106, 0.15);
-}
-
-.contact-form .button {
-    margin-top: 8px;
-    justify-self: start;
-}
-
-/* ================= TOAST NOTIFICATION ================= */
-.toast {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    background: #10b981;
-    color: #ffffff;
-    padding: 16px 24px;
-    border-radius: 100px;
-    box-shadow: 0 10px 25px rgba(16, 185, 129, 0.35);
-    font-weight: 600;
-    font-size: 0.9rem;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    z-index: 1000;
-    transform: translateY(120px);
-    opacity: 0;
-    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
-    pointer-events: none;
-}
-
-.toast.show {
-    transform: translateY(0);
-    opacity: 1;
-}
-
 /* ================= FOOTER ================= */
 .site-footer {
     background: #0d131a;
@@ -1161,9 +1089,7 @@ tr:last-child td {
     .site-header,
     .nav-toggle,
     .hero-actions,
-    .contact-form,
     .site-footer,
-    .toast,
     .nav-aquarium,
     .project-link {
         display: none !important;
